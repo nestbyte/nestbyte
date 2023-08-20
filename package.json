@@ -8,7 +8,7 @@
     "lint": "nx affected -t lint",
     "format": "nx format:check",
     "build": "nx affected -t build",
-    "semantic-publish": "nx affected -t publish"
+    "release": "nx affected -t release"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.6.7",

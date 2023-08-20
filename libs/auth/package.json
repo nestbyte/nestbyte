@@ -3,11 +3,15 @@
   "version": "0.0.1",
   "dependencies": {
     "@mikro-orm/core": "^5.7.14",
+    "@mikro-orm/migrations": "^5.7.14",
     "@mikro-orm/nestjs": "^5.2.1",
     "@mikro-orm/postgresql": "^5.7.14",
     "tslib": "^2.3.0"
   },
   "type": "commonjs",
   "main": "./src/index.js",
-  "typings": "./src/index.d.ts"
+  "typings": "./src/index.d.ts",
+  "devDependencies": {
+    "@mikro-orm/cli": "^5.7.14"
+  }
 }

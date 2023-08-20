@@ -39,6 +39,16 @@
           "codeCoverage": true
         }
       }
+    },
+    "migration:create": {
+      "outputs": [],
+      "executor": "nx:run-commands",
+      "options": {
+        "envFile": "libs/auth/.env.development",
+        "cwd": "./dist/libs/auth/src",
+        "command": "npx mikro-orm migration:create"
+      },
+      "dependsOn": ["build"]
     }
   },
   "tags": []

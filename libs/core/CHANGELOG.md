@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/nestbyte/nestbyte/compare/core-v1.0.1...core-v1.0.2) (2023-08-20)
+
+
+### Bug Fixes
+
+* **setup:** made repository public ([4fc66c4](https://github.com/nestbyte/nestbyte/commit/4fc66c40cac8f0f68d809a1d4e75eb24a8e97824)), closes [#1](https://github.com/nestbyte/nestbyte/issues/1)
+
 ## [1.0.1](https://github.com/nestbyte/nestbyte/compare/core-v1.0.0...core-v1.0.1) (2023-08-20)
 
 

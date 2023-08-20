@@ -35,7 +35,7 @@ jobs:
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
       - name: Publish to npm
-        run: npx semantic-release --ci
+        run: pnpm publish
         env:
           HUSKY: 0 # Disable Husky hooks
           GITHUB_TOKEN: ${{ secrets.SEMANTIC_RELEASE_GITHUB_TOKEN }}

@@ -7,7 +7,8 @@
     "test": "nx affected -t test",
     "lint": "nx affected -t lint",
     "format": "nx format:check",
-    "build": "nx affected -t build"
+    "build": "nx affected -t build",
+    "publish": "nx affected -t publish"
   },
   "private": true,
   "devDependencies": {

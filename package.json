@@ -4,7 +4,10 @@
   "license": "MIT",
   "scripts": {
     "prepare": "husky install",
-    "test": "nx affected -t test"
+    "test": "nx affected -t test",
+    "lint": "nx affected -t lint",
+    "format": "nx format:check",
+    "build": "nx affected -t build"
   },
   "private": true,
   "devDependencies": {

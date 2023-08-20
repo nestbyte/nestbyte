@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@nestbyte/auth": ["libs/auth/src/index.ts"],
       "@nestbyte/core": ["libs/core/src/index.ts"]
     }
   },

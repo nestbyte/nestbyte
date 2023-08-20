@@ -48,7 +48,12 @@
     "verdaccio": "^5.0.4"
   },
   "dependencies": {
+    "@mikro-orm/core": "^5.7.14",
+    "@mikro-orm/nestjs": "^5.2.1",
+    "@mikro-orm/postgresql": "^5.7.14",
+    "@mikro-orm/reflection": "^5.7.14",
     "@nestjs/common": "^10.0.2",
+    "@nestjs/config": "^3.0.0",
     "@nestjs/core": "^10.0.2",
     "@nestjs/platform-express": "^10.0.2",
     "axios": "^1.0.0",

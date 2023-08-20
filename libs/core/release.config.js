@@ -2,11 +2,13 @@ const name = 'core';
 const srcRoot = `libs/${name}`;
 
 const config = {
-  extends: 'release.config.base.js',
   pkgRoot: `dist/${srcRoot}`,
   tagFormat: name + '-v${version}',
   commitPaths: [`${srcRoot}/*`],
+  branches: ['main'],
   plugins: [
+    '@semantic-release/commit-analyzer',
+    '@semantic-release/release-notes-generator',
     [
       '@semantic-release/changelog',
       {
@@ -21,6 +23,7 @@ const config = {
       },
     ],
     '@semantic-release/npm',
+    '@semantic-release/github',
   ],
 };
 

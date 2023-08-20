@@ -10,6 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - uses: nrwl/nx-set-shas@v3
       - uses: pnpm/action-setup@v2
         with:
           version: 8
@@ -17,7 +20,6 @@ jobs:
         with:
           node-version: 16
           cache: 'pnpm'
-      - uses: nrwl/nx-set-shas@v3
       - name: Install Dependencies
         run: pnpm install --frozen-lockfile
 
@@ -28,6 +30,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - uses: nrwl/nx-set-shas@v3
       - uses: pnpm/action-setup@v2
         with:
           version: 8
@@ -35,7 +40,6 @@ jobs:
         with:
           node-version: 16
           cache: 'pnpm'
-      - uses: nrwl/nx-set-shas@v3
       - name: Install Dependencies
         run: pnpm install --frozen-lockfile
 
@@ -46,6 +50,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - uses: nrwl/nx-set-shas@v3
       - uses: pnpm/action-setup@v2
         with:
           version: 8
@@ -53,7 +60,6 @@ jobs:
         with:
           node-version: 16
           cache: 'pnpm'
-      - uses: nrwl/nx-set-shas@v3
       - name: Install Dependencies
         run: pnpm install --frozen-lockfile
 

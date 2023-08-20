@@ -22,6 +22,7 @@ jobs:
           node-version: '18.x'
           registry-url: 'https://registry.npmjs.org'
           scope: '@nestbyte'
+      - uses: nrwl/nx-set-shas@v3
       - name: Install Dependencies
         run: pnpm install --frozen-lockfile
       - name: Build

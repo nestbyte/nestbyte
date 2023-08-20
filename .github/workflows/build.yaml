@@ -17,6 +17,7 @@ jobs:
         with:
           node-version: 16
           cache: 'pnpm'
+      - uses: nrwl/nx-set-shas@v3
       - name: Install Dependencies
         run: pnpm install --frozen-lockfile
 
@@ -34,6 +35,7 @@ jobs:
         with:
           node-version: 16
           cache: 'pnpm'
+      - uses: nrwl/nx-set-shas@v3
       - name: Install Dependencies
         run: pnpm install --frozen-lockfile
 
@@ -51,6 +53,7 @@ jobs:
         with:
           node-version: 16
           cache: 'pnpm'
+      - uses: nrwl/nx-set-shas@v3
       - name: Install Dependencies
         run: pnpm install --frozen-lockfile
 

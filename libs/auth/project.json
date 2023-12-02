@@ -49,6 +49,16 @@
         "command": "npx mikro-orm migration:create"
       },
       "dependsOn": ["build"]
+    },
+    "migration:up": {
+      "outputs": [],
+      "executor": "nx:run-commands",
+      "options": {
+        "envFile": "libs/auth/.env.development",
+        "cwd": "./dist/libs/auth/src",
+        "command": "npx mikro-orm migration:up"
+      },
+      "dependsOn": ["build"]
     }
   },
   "tags": []

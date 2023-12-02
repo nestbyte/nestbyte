@@ -13,6 +13,7 @@
   "devDependencies": {
     "@commitlint/cli": "^17.6.7",
     "@commitlint/config-conventional": "^17.6.7",
+    "@mikro-orm/cli": "^5.7.14",
     "@nestjs/schematics": "^10.0.1",
     "@nestjs/testing": "^10.0.2",
     "@nx/eslint-plugin": "16.7.2",
@@ -48,7 +49,13 @@
     "verdaccio": "^5.0.4"
   },
   "dependencies": {
+    "@mikro-orm/core": "^5.7.14",
+    "@mikro-orm/migrations": "^5.7.14",
+    "@mikro-orm/nestjs": "^5.2.1",
+    "@mikro-orm/postgresql": "^5.7.14",
+    "@mikro-orm/reflection": "^5.7.14",
     "@nestjs/common": "^10.0.2",
+    "@nestjs/config": "^3.0.0",
     "@nestjs/core": "^10.0.2",
     "@nestjs/platform-express": "^10.0.2",
     "axios": "^1.0.0",

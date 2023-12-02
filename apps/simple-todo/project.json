@@ -29,6 +29,7 @@
       "options": {
         "buildTarget": "simple-todo:build"
       },
+      "dependsOn": ["simple-todo:build"],
       "configurations": {
         "development": {
           "buildTarget": "simple-todo:build:development"
